@@ -16,5 +16,7 @@ MonoBehaviour:
   cardValue: 1
   category: 0
   spellAction: 0
-  frontSprite: {fileID: -855298285791758126, guid: d5332c6df5b494936b75c5ac4b990afa, type: 3}
-  backSprite: {fileID: 5000927251509650613, guid: 76d8281ecc4cd4e21a46c3ce7d9538a5, type: 3}
+  frontSpriteUserA: {fileID: -855298285791758126, guid: d5332c6df5b494936b75c5ac4b990afa, type: 3}
+  backSpriteUserA: {fileID: 5000927251509650613, guid: 76d8281ecc4cd4e21a46c3ce7d9538a5, type: 3}
+  frontSpriteUserB: {fileID: -855298285791758126, guid: e32e78e734027482c930487fe7fa8196, type: 3}
+  backSpriteUserB: {fileID: -6729959317309938856, guid: 6a9074d801ed542f992363097120f5eb, type: 3}

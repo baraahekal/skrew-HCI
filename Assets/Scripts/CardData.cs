@@ -23,6 +23,12 @@ public class CardData : ScriptableObject
     public int cardValue;
     public CardCategory category;
     public SpellAction spellAction;
-    public Sprite frontSprite;
-    public Sprite backSprite;
+
+    // UI for User A
+    public Sprite frontSpriteUserA;
+    public Sprite backSpriteUserA;
+
+    // UI for User B
+    public Sprite frontSpriteUserB;
+    public Sprite backSpriteUserB;
 }

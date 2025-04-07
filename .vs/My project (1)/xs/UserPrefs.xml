@@ -1,37 +1,19 @@
 ﻿<Properties StartupConfiguration="{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CursorController.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="242" Column="1" />
-      <File FileName="Assets/Scripts/CardData.cs" />
-      <File FileName="Assets/Scripts/Card.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Deck.cs" Line="12" Column="17" />
-      <File FileName="Assets/Scripts/UIManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AIManager.cs" />
-      <File FileName=".gitignore" Line="61" Column="21" />
+      <File FileName="Assets/Scripts/CardData.cs" Line="10" Column="2" />
+      <File FileName="Assets/Scripts/Card.cs" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="34" Column="31" />
+      <File FileName="Assets/Scripts/BluetoothSocketClient.cs" Line="18" Column="43" />
+      <File FileName="Assets/Scripts/TUIOCardInput.cs" Line="73" Column="60" />
+      <File FileName="Assets/Scripts/GestureSocketClient.cs" Line="42" Column="40" />
+      <File FileName="Assets/Scripts/CursorController.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="308" Column="14" NotebookId="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="My project (1)" expanded="True">
-            <Node name="Solution Items" expanded="True">
-              <Node name="/Users/baraahekal/My project (1)/.gitignore" selected="True" />
-            </Node>
-            <Node name="Assets" expanded="True">
-              <Node name="UI" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="48d39e2b-8206-423b-b721-b17d5340bbc0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="04d6828e-9000-4ab9-86fe-0a1f4adfaf67" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

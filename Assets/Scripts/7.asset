@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68911b771e9284c319d0a3416e000289, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  cardName: Look at your card
+  cardName: 7
   cardValue: 7
   category: 1
   spellAction: 1
-  frontSprite: {fileID: 7028616704906629411, guid: e53fe81a323214019b809f3170a80c25, type: 3}
-  backSprite: {fileID: 5000927251509650613, guid: 76d8281ecc4cd4e21a46c3ce7d9538a5, type: 3}
+  frontSpriteUserA: {fileID: 7028616704906629411, guid: e53fe81a323214019b809f3170a80c25, type: 3}
+  backSpriteUserA: {fileID: 5000927251509650613, guid: 76d8281ecc4cd4e21a46c3ce7d9538a5, type: 3}
+  frontSpriteUserB: {fileID: 7028616704906629411, guid: 72db6ab48959941ee82ba6309e2a6968, type: 3}
+  backSpriteUserB: {fileID: -6729959317309938856, guid: 6a9074d801ed542f992363097120f5eb, type: 3}

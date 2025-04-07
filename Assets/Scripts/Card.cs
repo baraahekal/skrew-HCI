@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-    public CardData cardData;           // Assign via Inspector or at runtime.
+    public CardData cardData;           // Assigned via Inspector or at runtime.
     public bool isInPlayerHand = false; // Set by GameManager when dealing the card.
 
     private SpriteRenderer spriteRenderer;
@@ -14,30 +14,38 @@ public class Card : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (cardData != null)
         {
-            spriteRenderer.sprite = cardData.backSprite; // Start face down.
+            // Start face down using the appropriate back sprite based on the signed-in user.
+            string userId = PlayerPrefs.GetString("UserID", "UserA");
+            if (userId == "UserB")
+                spriteRenderer.sprite = cardData.backSpriteUserB;
+            else
+                spriteRenderer.sprite = cardData.backSpriteUserA;
         }
     }
 
-    private void OnMouseDown()
-    {
-        // If the card is in the player's hand and it's the player's turn, trigger the observe action.
-        if (isInPlayerHand && GameManager.Instance != null && GameManager.Instance.IsPlayerTurn)
-        {
-            GameManager.Instance.ObserveCard(this);
-        }
-        else
-        {
-            // Otherwise, simply flip the card.
-            Flip();
-        }
-    }
-
+    // Flip the card and choose the appropriate sprite based on the user.
     public void Flip()
     {
         isFaceUp = !isFaceUp;
         if (cardData != null)
         {
-            spriteRenderer.sprite = isFaceUp ? cardData.frontSprite : cardData.backSprite;
+            string userId = PlayerPrefs.GetString("UserID", "UserA");
+            if (isFaceUp)
+            {
+                // Use the front sprite.
+                if (userId == "UserB")
+                    spriteRenderer.sprite = cardData.frontSpriteUserB;
+                else
+                    spriteRenderer.sprite = cardData.frontSpriteUserA;
+            }
+            else
+            {
+                // Use the back sprite.
+                if (userId == "UserB")
+                    spriteRenderer.sprite = cardData.backSpriteUserB;
+                else
+                    spriteRenderer.sprite = cardData.backSpriteUserA;
+            }
         }
     }
 }
